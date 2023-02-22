@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div id="calculator-body">
+    <div class="calculator-input">
+      <input type="text" id="result" readonly>
+    </div>
+    <div class="calculator-row">
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="AC">AC</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="BK"><<</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="%">%</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="/">/</button></div>
+    </div>
+    <div class="calculator-row">
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="7">7</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="8">8</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="9">9</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="*">X</button></div>
+    </div>
+    <div class="calculator-row">
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="4">4</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="5">5</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="6">6</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="-">-</button></div>
+    </div>
+    <div class="calculator-row">
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="1">1</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="2">2</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="3">3</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="+">+</button></div>
+    </div>
+    <div class="calculator-row">
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value="0">0</button></div>
+      <div class="calculator-button"><button onclick="addNumber(this.value)" value=".">.</button></div>
+      <div class="calculator-button result-button"><button onclick="addNumber(this.value)" value="=">=</button></div>
+    </div>
+  </div>
+  <div class="toggleWrapper">
+    <input type="checkbox" class="dn" id="dn" onclick="darkMode()">
+    <label for="dn" class="toggle">
+        <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+        </span>
+        <span class="star star--1"></span>
+        <span class="star star--2"></span>
+        <span class="star star--3"></span>
+        <span class="star star--4"></span>
+        <span class="star star--5"></span>
+        <span class="star star--6"></span>
+    </label>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
